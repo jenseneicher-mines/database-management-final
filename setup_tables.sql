@@ -31,4 +31,6 @@ CREATE TABLE review(
 
 -- Move data into tables
 
-
+INSERT INTO Review (beer_id, rating, aroma, appearance, reviewer_name, palate, taste) SELECT (review_overall, review_aroma, review_appearance, review_profilename, review_palate, review_taste) FROM beer_master;
+INSERT INTO Beer(id, brewery_id, style, name) SELECT (beer_beerid, beer_style, beer_name) FROM beer_master;
+INSERT INTO Brewery(id, name) SELECT (brewery_id, brewery_name) FROM beer_master;
