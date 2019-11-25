@@ -30,7 +30,6 @@ CREATE TABLE review(
 	appearance NUMERIC(2,1)
 );
 
-
 CREATE TABLE beer_review_xref(
 	beer_id INTEGER REFERENCES Beer(id), 
 	reviewer_name TEXT REFERENCES Review(reviewer_name), 
