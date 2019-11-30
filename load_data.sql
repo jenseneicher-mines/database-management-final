@@ -18,5 +18,5 @@ CREATE TABLE beer_master(
 );
 
 -- Read data in from csv
-SELECT 'PLEASE MANUALLY ENTER IN THIS COMMAND: (database gets angry when I try to do it)' AS ''; 
+SELECT "PLEASE MANUALLY ENTER IN THIS COMMAND: (database gets angry when I try to do it)" AS ""; 
 SELECT "\COPY beer_master(brewery_id,brewery_name,review_overall,review_aroma,review_appearance,review_profilename,beer_style,review_palate,review_taste,beer_name,beer_abv,beer_id) FROM 'beer_reviews.csv' DELIMITER ',' CSV HEADER;" AS ''; 
